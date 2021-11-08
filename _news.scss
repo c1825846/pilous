@@ -1,0 +1,46 @@
+.news{
+    overflow: hidden;
+
+    &__wrapper{
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        align-items: center;
+    }
+    &__all{
+        text-decoration: underline;
+        font-size: 20px;
+    }
+    &__body{
+        position: relative;
+        height: 450px;
+    }
+    &__cards{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        gap: 8px;
+        overflow-x: scroll;
+        width: 110%;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    &__card{
+        &-image{
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        &-title{
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        &-text{
+
+        }
+    }
+
+}
